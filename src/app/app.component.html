@@ -4,3 +4,22 @@
     Welcome to WTT
   </h1>
 </div>
+<div>
+  <label for="Subject"></label>
+  <input name="subject" text="text" [(ngModel)]="query">
+  <button (click)="searchPosts()">Submit</button>
+</div>
+<div>
+  <ul>
+    <li *ngFor="let post of postList">
+      {{ post.data.title }}
+      <a href="{{ post.data.url }}">
+        {{ post.data.title }}
+        <img src="{{post.data.thumbnail}}">
+      </a>
+      {{post.data.author}}
+      Like {{post.data.like}}
+      {{post.data.created | date}}
+    </li>
+  </ul>
+</div>
