@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+html, div, h1 {
+  background-color: rosybrown;
+}
+h1{
+  font-family: -webkit-pictograph;
+}
+input{
+  margin-top: 25px;
+}
+button{
+  border-radius: 7px;
+  background-color: bisque;
+}
+button:hover{
+  background-color: cornsilk;
+}
+.searchbar{
+  text-align: center;
+  margin-top: -9px;
+}
+ul{
+  list-style: none;
+}
+img{
+  height: 70px;
+  width: 70px;
+}
